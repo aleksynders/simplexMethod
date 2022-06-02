@@ -6,10 +6,11 @@ namespace simplexMethod
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Предприятие изготавливает четыре вида изделий К1, К2, К3, К4,\nиспользуя для этого три группы станков А, Б, В." +
                 "\nОпределить какое количество видов изделий К1, К2, К3, К4\n" +
                 "надо запланировать, чтобы прибыль предприятия была максимальной.");
-
+            Console.ResetColor();
             double[,] main = new double[0,0];
             double[] res = new double[0], dohod = new double[0];
             int n = 0, m = 0, otv = 0;
